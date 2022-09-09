@@ -18,7 +18,7 @@ is available jointly under the MIT License and the Beerware License. See
 To get started with the app, clone the repo and then install the needed gems:
 
 ```
-$ gem install bundler -v 2.3.14
+$ gem install bundler -v 2.3.7
 $ bundle _2.3.7_ config set --local without 'production'
 $ bundle _2.3.7_ install
 ```
