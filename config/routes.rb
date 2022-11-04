@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "/logout", to: "sessions#destroy"
   delete "/logout", to: "sessions#destroy"
   resources :users
+  resources :microposts,          only: [:create, :destroy]
+  get '/microposts', to: 'static_pages#home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
